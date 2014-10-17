@@ -445,6 +445,9 @@ var PruneCluster;
     
 })(PruneCluster || (PruneCluster = {}));
 
+
+L.PruneCluster = PruneCluster;
+
 var PruneClusterForLeaflet = (L.Layer ? L.Layer : L.Class).extend({
     initialize: function (size, clusterMargin) {
         var _this = this;
@@ -872,6 +875,9 @@ var PruneClusterForLeaflet = (L.Layer ? L.Layer : L.Class).extend({
         }
     }
 });
+
+L.PruneClusterForLeaflet = PruneClusterForLeaflet;
+
 var PruneClusterLeafletSpiderfier = (L.Layer ? L.Layer : L.Class).extend({
     _2PI: Math.PI * 2,
     _circleFootSeparation: 25,
@@ -1027,4 +1033,7 @@ var PruneClusterLeafletSpiderfier = (L.Layer ? L.Layer : L.Class).extend({
         map.off('zoomend', this.Unspiderfy, this);
     }
 });
+
+L.PruneClusterLeafletSpiderfier = PruneClusterLeafletSpiderfier;
+
 //# sourceMappingURL=PruneCluster.js.map
